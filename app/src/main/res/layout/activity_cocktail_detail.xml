@@ -35,20 +35,7 @@
                 app:layout_collapseMode="pin"
                 app:layout_scrollFlags="scroll|enterAlways" />
         </android.support.design.widget.CollapsingToolbarLayout>
-        <TextView
-            android:id="@+id/cocktail_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-        <ImageView
-            android:id="@+id/cocktail_image"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:adjustViewBounds="true" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/textDescription" />
+
 
 
 
@@ -72,6 +59,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:id="@+id/cocktail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <ImageView
+                android:id="@+id/cocktail_image"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/textDescription" />
             <FrameLayout
                 android:id="@+id/stoper_container"
                 android:layout_width="match_parent"
