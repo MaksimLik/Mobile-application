@@ -12,7 +12,7 @@
     <string name="reset">Reset</string>
     <string name="accept">Accept</string>
     <string name="text_description">Input time | GG:MM:SS</string>
-    <string name="action_activity_title">Action Activity</string>
+    <string name="action_activity_title">About application</string>
     <string name="action_title">Action_Activity</string>
     <string name="action_share">Share</string>
     <string name="title_top">Fragment główny</string>
@@ -53,4 +53,12 @@
 
     <string name="nav_open_drawer">Open the navigation drawer</string>
     <string name="nav_close_drawer">Close the navigation drawer</string>
-    </resources>
+    <string name="your_text_goes_here">
+        A cookbook application with cocktails and cakes is a great idea for anyone who loves baking and mixing drinks.
+        This kind of application can offer a variety of recipes for cakes and cocktails, including traditional, modern, and creative options.
+
+        Users can browse through recipes, save their favorites, and even create a shopping list for ingredients. The application can also include features like step-by-step instructions, cooking tips, and photos of finished dishes.
+
+        With a cookbook application, users can discover new recipes, learn new cooking techniques, and improve their baking and cocktail-making skills.
+        It is a great resource for anyone who wants to impress their guests or indulge in some delicious treats.</string>
+</resources>
