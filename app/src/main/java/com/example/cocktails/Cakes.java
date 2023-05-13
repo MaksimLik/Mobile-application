@@ -6,7 +6,7 @@ public class Cakes {
     private String recipe;
 
     private int imageResourceId;
-    
+
 
     public static final Cakes[] cocktails = {
             new Cakes("Cocoa-cupcakes", R.drawable.cake1, "Wheat flour - 120 g\n" +
