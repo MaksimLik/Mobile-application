@@ -13,8 +13,8 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:orientation="vertical">
 
-    <fragment
 
+    <fragment
         android:id="@+id/detail_frag"
         android:name="com.example.cocktails.CocktailDetailFragment"
         android:layout_width="match_parent"

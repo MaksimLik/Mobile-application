@@ -42,8 +42,8 @@
         Whether you are a seasoned mixologist or a novice, our app caters to all levels of expertise.
         So, lets get mixing and raise a toast to discovering your new favorite cocktail recipe. Cheers!</string>
 
-    <string name="user_name"> Android Studio </string>
-    <string name="user_mail"> android.studio@android.com </string>
+    <string name="user_name"> Maksim Likhaivanenka </string>
+    <string name="user_mail"> maksim.likhaivanenka@android.com </string>
     <string name="drawer_import"> Import </string>
     <string name="drawer_gallery"> Gallery </string>
     <string name="drawer_slideshow"> Slideshow </string>

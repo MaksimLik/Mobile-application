@@ -12,7 +12,7 @@ import android.animation.ObjectAnimator;
 
 public class StartupAnimation extends AppCompatActivity {
 
-    private static final int ANIMATION_DURATION = 500; // 2 seconds
+    private static final int ANIMATION_DURATION = 2000; // 2 seconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
