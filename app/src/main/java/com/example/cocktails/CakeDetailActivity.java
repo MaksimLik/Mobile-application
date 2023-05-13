@@ -1,12 +1,8 @@
 package com.example.cocktails;
 
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
@@ -14,14 +10,11 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class CocktailDetailActivity2 extends AppCompatActivity {
+public class CakeDetailActivity extends AppCompatActivity {
     public static final String EXTRA_COCKTAIL_ID = "cocktailId";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,16 +29,16 @@ public class CocktailDetailActivity2 extends AppCompatActivity {
 
         // Wyświetlamy informacje o koktajlu
         int cocktailId = (Integer)getIntent().getExtras().get(EXTRA_COCKTAIL_ID);
-        String cocktailName = Cocktail2.cocktails[cocktailId].getName();
+        String cocktailName = Cakes.cocktails[cocktailId].getName();
         TextView textView = (TextView)findViewById(R.id.cocktail_text);
         textView.setText(cocktailName);
 
-        int cocktailImage = Cocktail2.cocktails[cocktailId].getImageResourceId();
+        int cocktailImage = Cakes.cocktails[cocktailId].getImageResourceId();
         ImageView imageView = (ImageView)findViewById(R.id.cocktail_image);
         imageView.setImageDrawable(ContextCompat.getDrawable(this, cocktailImage));
         imageView.setContentDescription(cocktailName);
 
-        String cocktailRecipe = Cocktail2.cocktails[cocktailId].getRecipe();
+        String cocktailRecipe = Cakes.cocktails[cocktailId].getRecipe();
         TextView TextDescription = (TextView)findViewById(R.id.textDescription);
         TextDescription.setText(cocktailRecipe);
 
@@ -60,7 +53,7 @@ public class CocktailDetailActivity2 extends AppCompatActivity {
 
     public void onClickDone(View view) {
         int cocktailId = (Integer)getIntent().getExtras().get(EXTRA_COCKTAIL_ID);
-        String cocktailRecipe = Cocktail2.cocktails[cocktailId].getRecipe();
+        String cocktailRecipe = Cakes.cocktails[cocktailId].getRecipe();
 //        TextView TextDescription = (TextView)findViewById(R.id.textDescription);
 //
 //        CharSequence text = cocktailRecipe;

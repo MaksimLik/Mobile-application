@@ -26,15 +26,15 @@ public class Tab2Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         RecyclerView cocktailRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_tab1, container, false);
-        String[] cocktailNames = new String[Cocktail2.cocktails.length];
+        String[] cocktailNames = new String[Cakes.cocktails.length];
         for (int i = 0; i < cocktailNames.length; i++) {
-            cocktailNames[i] = Cocktail2.cocktails[i].getName();
+            cocktailNames[i] = Cakes.cocktails[i].getName();
         }
 
-        int[] cocktailImages = new int[Cocktail2.cocktails.length];
+        int[] cocktailImages = new int[Cakes.cocktails.length];
 
         for (int i = 0; i < cocktailImages.length; i++) {
-            cocktailImages[i] = Cocktail2.cocktails[i].getImageResourceId();
+            cocktailImages[i] = Cakes.cocktails[i].getImageResourceId();
         }
 
         CaptionedImagesAdapter adapter = new CaptionedImagesAdapter(cocktailNames, cocktailImages);
@@ -43,8 +43,8 @@ public class Tab2Fragment extends Fragment {
         cocktailRecycler.setLayoutManager(layoutManager);
         adapter.setListener(new CaptionedImagesAdapter.Listener() {
             public void onClick(int position) {
-                Intent intent = new Intent(getActivity(), CocktailDetailActivity2.class);
-                intent.putExtra(CocktailDetailActivity2.EXTRA_COCKTAIL_ID, position);
+                Intent intent = new Intent(getActivity(), CakeDetailActivity.class);
+                intent.putExtra(CakeDetailActivity.EXTRA_COCKTAIL_ID, position);
                 getActivity().startActivity(intent);
             }
         });

@@ -1,6 +1,6 @@
 package com.example.cocktails;
 
-public class Cocktail2 {
+public class Cakes {
     private String name;
 
     private String recipe;
@@ -40,13 +40,13 @@ public class Cocktail2 {
 //        this.recipe = recipe;
 //    }
 
-    public static final Cocktail2[] cocktails = {
-            new Cocktail2("Cocktail #111", R.drawable.image01, "11111"),
-            new Cocktail2("Cocktail #222", R.drawable.image02, "2222"),
-            new Cocktail2("Cocktail #333", R.drawable.image03, "333"),
-            new Cocktail2("Cocktail #444", R.drawable.image04,"444" )};
+    public static final Cakes[] cocktails = {
+            new Cakes("Cocktail #111", R.drawable.image01, "11111"),
+            new Cakes("Cocktail #222", R.drawable.image02, "2222"),
+            new Cakes("Cocktail #333", R.drawable.image03, "333"),
+            new Cakes("Cocktail #444", R.drawable.image04,"444" )};
 
-    private Cocktail2(String name, int imageResourceId, String recipe) {
+    private Cakes(String name, int imageResourceId, String recipe) {
         this.name = name;
         this.imageResourceId = imageResourceId;
         this.recipe = recipe;
