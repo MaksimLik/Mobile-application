@@ -38,7 +38,7 @@ public class StoperFragment extends Fragment implements View.OnClickListener {
 
     private void runStoper(View view) {
         final TextView timeView = (TextView) view.findViewById(R.id.time_view);
-        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.signal);
+        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.alarm);
 
         final Handler handler = new Handler();
         handler.post(new Runnable() {
